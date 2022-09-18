@@ -16,7 +16,11 @@ apt-get install curl llvm-[Insert version here]
 ```
 5. omwCppWrapper was developed with the [code::blocks](https://www.codeblocks.org/) ide. Thus opening the project files with code::blocks suffices to compile and run the project.
 
-## Dependacys
+## Testing
+Running the "debug" version of the code::blocks project runs the tests included in /src/tests.cpp
+For this however the api key needs to be pasted in the /src/tests.cpp
+
+## Dependencies
 Currently json-cpp and libcurl are directly included, you can find there respective repos here:
 https://github.com/open-source-parsers/jsoncpp
 https://curl.se/libcurl/c/
