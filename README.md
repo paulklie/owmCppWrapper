@@ -14,14 +14,24 @@ Currently supports the following endpoints:
 ```
 apt-get install curl llvm-[Insert version here]
 ```
-5. omwCppWrapper was developed with the [code::blocks](https://www.codeblocks.org/) ide. Thus opening the project files with code::blocks suffices to compile and run the project.
+### Running in code::blocks
+omwCppWrapper was developed with the [code::blocks](https://www.codeblocks.org/) ide. Thus opening the project files with code::blocks suffices to compile and run the project.
+### A makefile is also provided to run without code::blocks.
 
 ## Usage
 The Example folder contains an example of how the wrapper can be used. The "release" build options included in code::blocks automaticly run this example.
+```
+make release
+./bin/Release/owmCppWrapper 
+```
 
 ## Testing
 Running the "debug" version of the code::blocks project runs the tests included in /src/tests.cpp
 For this however the api key needs to be pasted in the /src/tests.cpp
+```
+make
+./bin/Debug/owmCppWrapper 
+```
 
 ## Dependencies
 Currently json-cpp and catc2 are directly included, you can find there respective repos here:
