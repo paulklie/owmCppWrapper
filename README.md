@@ -21,6 +21,6 @@ Running the "debug" version of the code::blocks project runs the tests included 
 For this however the api key needs to be pasted in the /src/tests.cpp
 
 ## Dependencies
-Currently json-cpp and libcurl are directly included, you can find there respective repos here:
+Currently json-cpp and catc2 are directly included, you can find there respective repos here:
 https://github.com/open-source-parsers/jsoncpp
-https://curl.se/libcurl/c/
+https://github.com/catchorg/Catch2
