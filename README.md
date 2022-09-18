@@ -1,6 +1,6 @@
 # omwCppWrapper
 ## A Wrapper for the openweathermap API.
-Functions as a wrapper, for more easy access to the api.
+Functions as a wrapper, for more easy access to the api. Not threadsafe!
 https://openweathermap.org
 Currently supports the following endpoints:
 - Hourly forcast (https://openweathermap.org/api/hourly-forecast)
