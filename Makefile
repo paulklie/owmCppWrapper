@@ -16,7 +16,7 @@ CFLAGS = -Wall -fexceptions
 RESINC = 
 LIBDIR = 
 LIB = 
-LDFLAGS = 
+LDFLAGS = -lcurl
 
 INC_RELEASE = $(INC) -Iinclude
 CFLAGS_RELEASE = $(CFLAGS) -O2
