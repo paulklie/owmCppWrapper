@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="owmCppWrapper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/owmCppWrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=c17" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="curl" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/owmCppWrapper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/catch/catch_amalgamated.cpp" />
+		<Unit filename="include/catch/catch_amalgamated.hpp" />
+		<Unit filename="include/cityData.h" />
+		<Unit filename="include/forcastResponce.h" />
+		<Unit filename="include/json/json-forwards.h" />
+		<Unit filename="include/json/json.h" />
+		<Unit filename="include/jsoncpp.cpp" />
+		<Unit filename="include/mainData.h" />
+		<Unit filename="include/openWeatherMap.h" />
+		<Unit filename="include/responceData.h" />
+		<Unit filename="include/sysData.h" />
+		<Unit filename="include/tests.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="include/weatherCategory.h" />
+		<Unit filename="include/weatherResponce.h" />
+		<Unit filename="include/windData.h" />
+		<Unit filename="src/cityData.cpp" />
+		<Unit filename="src/forcastResponce.cpp" />
+		<Unit filename="src/mainData.cpp" />
+		<Unit filename="src/openWeatherMap.cpp" />
+		<Unit filename="src/responceData.cpp" />
+		<Unit filename="src/sysData.cpp" />
+		<Unit filename="src/tests.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="src/weatherCategory.cpp" />
+		<Unit filename="src/weatherResponce.cpp" />
+		<Unit filename="src/windData.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
